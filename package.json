@@ -1,0 +1,34 @@
+{
+  "name": "vittascience-ressource-checker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main.js --env-file .env",
+    "build": "tsc",
+    "dev": "ts-node-dev src/main.ts --env-file .env",
+    "bundle": "pkg dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pascal-Flores/Vittascience-Ressource-Checker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pascal-Flores/Vittascience-Ressource-Checker/issues"
+  },
+  "homepage": "https://github.com/Pascal-Flores/Vittascience-Ressource-Checker#readme",
+  "dependencies": {
+    "@types/commander": "^2.12.5",
+    "@types/node": "^22.9.3",
+    "@types/puppeteer": "^7.0.4",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "pkg": "^5.8.1",
+    "puppeteer": "^23.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
