@@ -1,0 +1,22 @@
+
+> vittascience-ressource-checker@0.0.0 bbr
+> npm run build && npm run bundle && ./main-linux
+
+
+> vittascience-ressource-checker@0.0.0 build
+> tsc
+
+
+> vittascience-ressource-checker@0.0.0 bundle
+> pkg dist/main.js
+
+> pkg@5.8.1
+> Targets not specified. Assuming:
+  node18-linux-x64, node18-macos-x64, node18-win-x64
+> Warning Cannot include directory %1 into executable.
+  The directory must be distributed with executable as %2.
+  %1: node_modules/puppeteer/.local-chromium
+  %2: path-to-executable/puppeteer
+> Warning Babel parse has failed: Unexpected token, expected "from" (1:12)
+> Warning Failed to make bytecode node18-x64 for file /snapshot/Vittascience-Ressource-Checker/node_modules/typed-query-selector/shim.d.ts
+> Warning Failed to make bytecode node18-x64 for file /snapshot/Vittascience-Ressource-Checker/node_modules/typed-query-selector/shim.d.ts

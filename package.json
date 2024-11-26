@@ -7,7 +7,8 @@
     "start": "node dist/main.js --env-file .env",
     "build": "tsc",
     "dev": "ts-node-dev src/main.ts --env-file .env",
-    "bundle": "pkg dist/main.js"
+    "bundle": "pkg dist/main.js",
+    "bbr": "npm run build && npm run bundle && ./main-linux"
   },
   "repository": {
     "type": "git",
@@ -21,14 +22,22 @@
   },
   "homepage": "https://github.com/Pascal-Flores/Vittascience-Ressource-Checker#readme",
   "dependencies": {
+    "@types/axios": "^0.14.4",
     "@types/commander": "^2.12.5",
     "@types/node": "^22.9.3",
     "@types/puppeteer": "^7.0.4",
+    "@types/winston": "^2.4.4",
+    "axios": "^1.7.7",
     "commander": "^12.1.0",
     "dotenv": "^16.4.5",
+    "https": "^1.0.0",
     "pkg": "^5.8.1",
     "puppeteer": "^23.9.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-adblocker": "^2.13.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "winston": "^3.17.0"
   }
 }
